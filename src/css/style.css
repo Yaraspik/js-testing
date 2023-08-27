@@ -1,0 +1,65 @@
+.cards {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    margin-right: 4px;
+    width: 39px;
+    height: 39px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card[data-name="visa"] {
+    background-image: url(../img/visa.png);
+}
+
+.card[data-name="master"] {
+    background-image: url(../img/mc.png);
+}
+
+.card[data-name="amex"] {
+    background-image: url(../img/amex.png);
+}
+
+.card[data-name="discover"] {
+    background-image: url(../img/discover.png);
+}
+
+.card[data-name="jcb"] {
+    background-image: url(../img/jcb.png);
+}
+
+.card[data-name="diners-club"] {
+    background-image: url(../img/diners-club.png);
+}
+
+.card[data-name="world"] {
+    background-image: url(../img/wrld.png);
+}
+
+.input-tooltip {
+    position: absolute;
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.not-active {
+    opacity: 0.25;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
