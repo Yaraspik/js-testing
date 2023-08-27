@@ -1,0 +1,70 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*********************************************************************/
+.cards {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    margin-right: 4px;
+    width: 39px;
+    height: 39px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card[data-name="visa"] {
+    background-image: url(5463b1deec4cc48040dc.png);
+}
+
+.card[data-name="master"] {
+    background-image: url(5f012d75c61f15d6ffe9.png);
+}
+
+.card[data-name="amex"] {
+    background-image: url(74e6a1267e342aecff98.png);
+}
+
+.card[data-name="discover"] {
+    background-image: url(11ea1d8c65079dd5f029.png);
+}
+
+.card[data-name="jcb"] {
+    background-image: url(64ff92aaa136064be9f6.png);
+}
+
+.card[data-name="diners-club"] {
+    background-image: url(acbc45a156c07de4ec9d.png);
+}
+
+.card[data-name="world"] {
+    background-image: url(47acb29421a267d1fc87.png);
+}
+
+.input-tooltip {
+    position: absolute;
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.not-active {
+    opacity: 0.25;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*# sourceMappingURL=main.css.map*/
